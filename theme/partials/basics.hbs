@@ -79,12 +79,19 @@
 		{{/if}}
 	</header>
 
-	{{#if summary}}
+        {{#if summary}}
 	<section class="section main-summary">
-		<section>
-			<div>{{paragraphSplit summary}}</div>
-		</section>
-	</section>
-	{{/if}}
-
+	    {{#if summary.length}}
+               <ul class="summary">
+               {{#each summary}}
+               <li>{{.}}</li>
+               {{/each}}
+               </ul>
+            {{else}}
+            <section>
+                 <div>{{paragraphSplit summary}}</div>
+            </section>
+            {{/if}}
+        </section>
+        {{/if}}
 {{/resume.basics}}
