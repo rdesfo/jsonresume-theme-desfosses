@@ -25,5 +25,12 @@
     {{> interests }}
     {{> references }}
 
+    <script type="application/javascript">
+         var pagebreak = document.createElement("div");
+         pagebreak.setAttribute("style", "page-break-before:always");
+
+         var mypoint = document.getElementById("work")
+         mypoint.insertBefore(pagebreak, mypoint.childNodes[7])
+    </script>
   </body>
 </html>
