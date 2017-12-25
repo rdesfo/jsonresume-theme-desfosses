@@ -403,6 +403,16 @@ ul.courses li:hover {
     background: #dfeaf0;
 }
 
+ul.summary {
+    margin-top: 0;
+}
+
+ul.summary li {
+    font-weight: 700;
+    margin-left: 2em;
+    font-size: 120%;
+}
+
 .item {
     padding: .5em 0;
 }
