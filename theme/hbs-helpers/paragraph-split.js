@@ -4,7 +4,7 @@ const paragraphSplit = (text) => {
   const expr = /\r\n|\r|\n/g;
   const lines = Array.isArray(text) ? text.join('').split(expr) : text.split(expr);
   const output = lines.filter(line => line).reduce((a, b) => `${a}<p>${b}</p>`, '');
-  return new SafeString(output);
+  return new SafeString(output.filter(l => l !== "<p></p>"));
 };
 
 module.exports = { paragraphSplit };
