@@ -63,9 +63,9 @@
     	<div class="item" id="work-item">
         {{#if summary}}
         <div class="summary">
-          <p>{{paragraphSplit summary}}</p>
+          {{paragraphSplit summary}}
         </div>
-        {{/if}} 
+        {{/if}}
         {{#if highlights.length}}
         <ul class="highlights">
           {{#each highlights}}
