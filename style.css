@@ -512,6 +512,8 @@ ul.summary li {
 
 #skills .item {
     width: 16em;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 #skills .item .keywords {
